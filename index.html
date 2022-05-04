@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>exercise</title>
+    <style>
+        .gradient-bg{
+	background: linear-gradient(-45deg, #dadf3dc8, #e77e3c, #a8ba5f, #e0e0e0);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+    </style>
+</head>
+<body class="gradient-bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Monique Dampies</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home" class="home">
+        <div class="container-fluid text-center img-fluid">
+            <h1 class="display-5 text-center">Home</h1>
+            <div class="row">
+            <div class="home-image img-fluid text-center"><img class="w-75" src="./monique.jpg"></div>
+            <blockquote class="blockquote">
+                <p>Welcome to this webpage built for a bootstrap class exercise</p>
+              </blockquote>
+
+        </div>
+        </div>
+        <!-- <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>
+                        WELCOME TO
+                    </p>
+                </div>
+                <div class="col-md-6 img-fluid text-center ">
+                    <img class="W-100 " src="./monique.jpg" />
+                </div>
+                <div class="col-md-3">
+                        <p>Welcome to this webpage built for a bootstrap class exercise</p>
+                </div>
+            </div>
+        </div> -->
+
+      </section>
+
+      <section id="about" class="about">
+        <h1 class="display-5 text-center">About</h1>
+        <div class="container-fluid w-75 mx-auto">
+        <table class="table table-hover table-striped table-lg table-success table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Surname</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Monique</td>
+              <td>Dampies</td>
+              <td>Mitchells Plain</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Shane</td>
+              <td>Stevens</td>
+              <td>Plumstead</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Cassidy</td>
+              <td>Manuel</td>
+              <td>Mitchells Plain</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Marshalino</td>
+              <td>Jankowski</td>
+              <td>Claremont</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Emile</td>
+              <td>Van Wyk</td>
+              <td>Claremont</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Reagan</td>
+              <td>Carolussen</td>
+              <td>Mitchells Plain</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Taucia</td>
+              <td>Jackson</td>
+              <td>Mitchells Plain</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Ricardo</td>
+              <td>Moses</td>
+              <td>Mitchells Plain</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Jared</td>
+              <td>Smith</td>
+              <td>Mitchells Plain</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <blockquote class="blockquote">
+            <p>This is a table where you can find out which areas a few of my classmates are from as well as a contact form you can use to ask any questions or make any enquiries.</p>
+          </blockquote>
+    </div>
+
+      </section>
+      <section id="contact" class="contact">
+        <h1 class="display-5 text-center text-capitalize">Contact form</h1>
+        <blockquote class="blockquote text-center">
+            <p>Feel free to let me know anything thats on your mind.</p>
+          </blockquote>
+        <div class="container-fluid bg-success w-75 mx-auto">
+            <h2 class="display-2 text-center text-capitalize">Please fill it in</h2>
+            <form action="https://formspree.io/f/mwkywzgk" method="POST">
+                <!-- Name-->
+                <div class="row my-2">
+                    <Label for="name" class="col-2 col-form-label-lg">Name:</Label>
+                    <div class="col-8">
+                        <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control">
+                    </div>
+                </div>
+                <!--Surname-->
+                <div class="row my-2">
+                    <Label for="surname" class="col-2 col-form-label-lg">Surname:</Label>
+                    <div class="col-8">
+                        <input id="name" name="name" type="text" placeholder="Enter your surname" class="form-control">
+                    </div>
+                </div>
+                <!-- email -->
+                <div class="row my-2">
+                    <Label for="email" class="col-2 col-form-label-lg">Email:</Label>
+                    <div class="col-8">
+                        <input id="name" name="email" type="text" placeholder="Enter your email" class="form-control">
+                    </div>
+    
+                    <!-- Age -->
+                    <div class="row my-2">
+                        <label for="age" class="col-md-2 col-form-label-lg">Age: </label>
+                        <div class="col-8">
+                            <input id="age" name="age" type="number" placeholder="Enter your age" class="form-control">
+                        </div>
+                    </div>
+                    <!-- Gender -->
+                    <div class="row my-2">
+                        <label for="gender" class="col-md-2 col-form-label-lg">Gender: </label>
+                        <div class="col-8">
+                            <span class="ms-3">Male</span> <input id="gender" name="gender" type="radio">
+                            <span class="ms-2">Female</span> <input id="gender" name="gender" type="radio">
+                        </div>
+                    </div>
+                    <!-- Subjects -->
+                    <div class="row my-2">
+                        <label for="subject" class="col-md-2 col-form-label-lg">Subject: </label>
+                        <div class="col-8">
+                            <select name="subject" id="subject" class="form-select">
+                                <option value="html5" selected>HTML 5</option>
+                                <option value="css3">CSS 3</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="bottstrap">Bootstrap</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- message -->
+                    <div class="row my-2">
+                        <label for="message" class="col-md-2 col-form-label-lg">Message: </label>
+                        <div class="col-8 form-floating">
+                            <textarea name="message" id="message" class="h-150 w-100">
+                        </textarea>
+                        </div>
+                    </div>
+                    <!-- button -->
+                    <div class="row my-2">
+                        <label class="col-lg-2 col-form-label-lg"></label>
+                        <div class="col-8">
+                            <input type="submit" value="Submit" class="btn btn-success w-100">
+                        </div>
+                    </div>
+            </form>
+
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
